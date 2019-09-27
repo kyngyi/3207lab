@@ -1,0 +1,799 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Sep 27 16:04:24 2019
+# Process ID: 3812
+# Current directory: C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/project_2/project_2.runs/synth_1
+# Command line: vivado.exe -log Wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Wrapper.tcl
+# Log file: C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/project_2/project_2.runs/synth_1/Wrapper.vds
+# Journal file: C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/project_2/project_2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Wrapper.tcl -notrace
+Command: synth_design -top Wrapper -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10356 
+WARNING: [Synth 8-976] ImmSrc has already been declared [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:76]
+WARNING: [Synth 8-2654] second declaration of ImmSrc ignored [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:76]
+INFO: [Synth 8-994] ImmSrc is declared here [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:63]
+WARNING: [Synth 8-2611] redeclaration of ansi port CLK is not allowed [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:83]
+WARNING: [Synth 8-976] PCS has already been declared [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:84]
+WARNING: [Synth 8-2654] second declaration of PCS ignored [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:84]
+INFO: [Synth 8-994] PCS is declared here [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:71]
+WARNING: [Synth 8-976] RegW has already been declared [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:85]
+WARNING: [Synth 8-2654] second declaration of RegW ignored [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:85]
+INFO: [Synth 8-994] RegW is declared here [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:72]
+WARNING: [Synth 8-976] MemW has already been declared [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:87]
+WARNING: [Synth 8-2654] second declaration of MemW ignored [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:87]
+INFO: [Synth 8-994] MemW is declared here [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:73]
+WARNING: [Synth 8-976] FlagW has already been declared [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:88]
+WARNING: [Synth 8-2654] second declaration of FlagW ignored [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:88]
+INFO: [Synth 8-994] FlagW is declared here [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:80]
+WARNING: [Synth 8-2611] redeclaration of ansi port MemWrite is not allowed [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:93]
+WARNING: [Synth 8-976] ALUControl has already been declared [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:104]
+WARNING: [Synth 8-2654] second declaration of ALUControl ignored [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:104]
+INFO: [Synth 8-994] ALUControl is declared here [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:79]
+WARNING: [Synth 8-2611] redeclaration of ansi port ALUResult is not allowed [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:105]
+WARNING: [Synth 8-976] ALUFlags has already been declared [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:106]
+WARNING: [Synth 8-2654] second declaration of ALUFlags ignored [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:106]
+INFO: [Synth 8-994] ALUFlags is declared here [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:90]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 696.133 ; gain = 182.391
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Wrapper' [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/Wrapper.v:29]
+	Parameter N_LEDs_OUT bound to: 8 - type: integer 
+	Parameter N_DIPs bound to: 16 - type: integer 
+	Parameter N_PBs bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ARM' [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:39]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/RegFile.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (1#1) [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/RegFile.v:35]
+INFO: [Synth 8-6157] synthesizing module 'Extend' [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/Extend.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'Extend' (2#1) [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/Extend.v:35]
+INFO: [Synth 8-6157] synthesizing module 'Decoder' [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/Decoder.v:35]
+WARNING: [Synth 8-3848] Net NoWrite in module/entity Decoder does not have driver. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/Decoder.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder' (3#1) [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/Decoder.v:35]
+INFO: [Synth 8-6157] synthesizing module 'CondLogic' [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/CondLogic.v:35]
+WARNING: [Synth 8-6896] procedural assign is inside initial block, initial block items will be ignored [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/CondLogic.v:55]
+WARNING: [Synth 8-3848] Net PCSrc in module/entity CondLogic does not have driver. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/CondLogic.v:44]
+WARNING: [Synth 8-3848] Net RegWrite in module/entity CondLogic does not have driver. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/CondLogic.v:45]
+WARNING: [Synth 8-3848] Net MemWrite in module/entity CondLogic does not have driver. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/CondLogic.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'CondLogic' (4#1) [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/CondLogic.v:35]
+INFO: [Synth 8-6157] synthesizing module 'Shifter' [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/Shifter.v:35]
+INFO: [Synth 8-6157] synthesizing module 'shiftByNPowerOf2' [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/Shifter.v:59]
+	Parameter i bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shiftByNPowerOf2' (5#1) [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/Shifter.v:59]
+INFO: [Synth 8-6157] synthesizing module 'shiftByNPowerOf2__parameterized0' [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/Shifter.v:59]
+	Parameter i bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shiftByNPowerOf2__parameterized0' (5#1) [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/Shifter.v:59]
+INFO: [Synth 8-6157] synthesizing module 'shiftByNPowerOf2__parameterized1' [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/Shifter.v:59]
+	Parameter i bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shiftByNPowerOf2__parameterized1' (5#1) [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/Shifter.v:59]
+INFO: [Synth 8-6157] synthesizing module 'shiftByNPowerOf2__parameterized2' [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/Shifter.v:59]
+	Parameter i bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shiftByNPowerOf2__parameterized2' (5#1) [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/Shifter.v:59]
+INFO: [Synth 8-6157] synthesizing module 'shiftByNPowerOf2__parameterized3' [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/Shifter.v:59]
+	Parameter i bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'shiftByNPowerOf2__parameterized3' (5#1) [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/Shifter.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'Shifter' (6#1) [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/Shifter.v:35]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ALU.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (7#1) [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ALU.v:30]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ProgramCounter.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (8#1) [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ProgramCounter.v:35]
+WARNING: [Synth 8-3848] Net WriteData in module/entity ARM does not have driver. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:48]
+WARNING: [Synth 8-3848] Net Src_A in module/entity ARM does not have driver. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:102]
+WARNING: [Synth 8-3848] Net Src_B in module/entity ARM does not have driver. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:103]
+WARNING: [Synth 8-3848] Net Sh in module/entity ARM does not have driver. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:96]
+WARNING: [Synth 8-3848] Net Shamt5 in module/entity ARM does not have driver. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:97]
+WARNING: [Synth 8-3848] Net ShIn in module/entity ARM does not have driver. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:98]
+INFO: [Synth 8-6155] done synthesizing module 'ARM' (9#1) [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'Wrapper' (10#1) [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/Wrapper.v:29]
+WARNING: [Synth 8-3331] design CondLogic has unconnected port PCSrc
+WARNING: [Synth 8-3331] design CondLogic has unconnected port RegWrite
+WARNING: [Synth 8-3331] design CondLogic has unconnected port MemWrite
+WARNING: [Synth 8-3331] design CondLogic has unconnected port CLK
+WARNING: [Synth 8-3331] design CondLogic has unconnected port PCS
+WARNING: [Synth 8-3331] design CondLogic has unconnected port RegW
+WARNING: [Synth 8-3331] design CondLogic has unconnected port NoWrite
+WARNING: [Synth 8-3331] design CondLogic has unconnected port MemW
+WARNING: [Synth 8-3331] design CondLogic has unconnected port FlagW[1]
+WARNING: [Synth 8-3331] design CondLogic has unconnected port FlagW[0]
+WARNING: [Synth 8-3331] design CondLogic has unconnected port Cond[3]
+WARNING: [Synth 8-3331] design CondLogic has unconnected port Cond[2]
+WARNING: [Synth 8-3331] design CondLogic has unconnected port Cond[1]
+WARNING: [Synth 8-3331] design CondLogic has unconnected port Cond[0]
+WARNING: [Synth 8-3331] design CondLogic has unconnected port ALUFlags[3]
+WARNING: [Synth 8-3331] design CondLogic has unconnected port ALUFlags[2]
+WARNING: [Synth 8-3331] design CondLogic has unconnected port ALUFlags[1]
+WARNING: [Synth 8-3331] design CondLogic has unconnected port ALUFlags[0]
+WARNING: [Synth 8-3331] design Decoder has unconnected port NoWrite
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[31]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[30]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[29]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[28]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[27]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[26]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[25]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[24]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[23]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[22]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[21]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[20]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[19]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[18]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[17]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[16]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[15]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[14]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[13]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[12]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[11]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[10]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[9]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[8]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[7]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[6]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[5]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[4]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[3]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[2]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[1]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 734.559 ; gain = 220.816
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 734.559 ; gain = 220.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 734.559 ; gain = 220.816
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLK_undiv'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CLK_undiv'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CLK_undiv'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:10]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports CLK_undiv]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:10]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegCat[0]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegCat[0]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegCat[1]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegCat[1]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegCat[2]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegCat[2]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegCat[3]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegCat[3]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegCat[4]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:149]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegCat[4]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:150]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegCat[5]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegCat[5]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegCat[6]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegCat[6]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegAn[0]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:163]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:163]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegAn[0]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:164]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:164]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegAn[1]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:166]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegAn[1]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegAn[2]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegAn[2]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegAn[3]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:172]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:172]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegAn[3]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:173]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:173]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegAn[4]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:175]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:175]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegAn[4]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:176]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:176]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegAn[5]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:178]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:178]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegAn[5]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:179]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:179]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegAn[6]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:181]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:181]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegAn[6]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:182]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:182]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegAn[7]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:184]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:184]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SevenSegAn[7]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:185]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:185]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PAUSE'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:194]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:194]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PAUSE'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:195]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:195]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RX'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:487]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:487]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RX'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:488]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:488]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TX'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:490]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:490]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TX'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:491]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:491]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-508] No pins matched 'RX_MSF1_reg/C'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:725]
+WARNING: [Vivado 12-508] No pins matched 'RX_MSF2_reg/D'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:725]
+CRITICAL WARNING: [Vivado 12-4739] set_max_delay:No valid object(s) found for '-from [get_pins RX_MSF1_reg/C]'. [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc:725]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 869.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 869.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 869.137 ; gain = 355.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 869.137 ; gain = 355.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 869.137 ; gain = 355.395
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "INSTR_MEM" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DATA_CONST_MEM" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "INSTR_MEM" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DATA_CONST_MEM" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'ALUDecoderOutput_reg' [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/Decoder.v:77]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 869.137 ; gain = 355.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---RAMs : 
+	               4K Bit         RAMs := 1     
+	              512 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 11    
+	   4 Input     32 Bit        Muxes := 8     
+	 129 Input     32 Bit        Muxes := 2     
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   9 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Wrapper 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---RAMs : 
+	               4K Bit         RAMs := 1     
++---Muxes : 
+	 129 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module RegFile 
+Detailed RTL Component Info : 
++---RAMs : 
+	              512 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module Extend 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module Decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+Module shiftByNPowerOf2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+Module shiftByNPowerOf2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+Module shiftByNPowerOf2__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+Module shiftByNPowerOf2__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+Module shiftByNPowerOf2__parameterized3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module ProgramCounter 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module ARM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element RegFile1/RegBank_reg was removed. 
+WARNING: [Synth 8-3331] design ARM has unconnected port MemWrite
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[31]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[30]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[29]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[28]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[27]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[26]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[25]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[24]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[23]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[22]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[21]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[20]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[19]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[18]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[17]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[16]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[15]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[14]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[13]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[12]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[11]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[10]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[9]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[8]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[7]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[6]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[5]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[4]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[3]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[2]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[1]
+WARNING: [Synth 8-3331] design ARM has unconnected port WriteData[0]
+WARNING: [Synth 8-3331] design ARM has unconnected port Instr[31]
+WARNING: [Synth 8-3331] design ARM has unconnected port Instr[30]
+WARNING: [Synth 8-3331] design ARM has unconnected port Instr[29]
+WARNING: [Synth 8-3331] design ARM has unconnected port Instr[28]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\ARM1/ProgramCounter1/PC_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (CONSOLE_OUT_valid_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CONSOLE_OUT_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CONSOLE_OUT_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CONSOLE_OUT_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CONSOLE_OUT_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CONSOLE_OUT_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CONSOLE_OUT_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CONSOLE_OUT_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CONSOLE_OUT_reg[7] )
+INFO: [Synth 8-3886] merging instance 'SEVENSEGHEX_reg[0]' (FDRE) to 'LED_OUT_reg[0]'
+INFO: [Synth 8-3886] merging instance 'SEVENSEGHEX_reg[1]' (FDRE) to 'LED_OUT_reg[1]'
+INFO: [Synth 8-3886] merging instance 'SEVENSEGHEX_reg[2]' (FDRE) to 'LED_OUT_reg[2]'
+INFO: [Synth 8-3886] merging instance 'SEVENSEGHEX_reg[3]' (FDRE) to 'LED_OUT_reg[3]'
+INFO: [Synth 8-3886] merging instance 'SEVENSEGHEX_reg[4]' (FDRE) to 'LED_OUT_reg[4]'
+INFO: [Synth 8-3886] merging instance 'SEVENSEGHEX_reg[5]' (FDRE) to 'LED_OUT_reg[5]'
+INFO: [Synth 8-3886] merging instance 'SEVENSEGHEX_reg[6]' (FDRE) to 'LED_OUT_reg[6]'
+INFO: [Synth 8-3886] merging instance 'SEVENSEGHEX_reg[7]' (FDRE) to 'LED_OUT_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SEVENSEGHEX_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\LED_OUT_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\LED_OUT_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\LED_OUT_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\LED_OUT_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\LED_OUT_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\LED_OUT_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\LED_OUT_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\LED_OUT_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (ARM1/Decoder1/ALUDecoderOutput_reg[1]) is unused and will be removed from module Wrapper.
+WARNING: [Synth 8-3332] Sequential element (ARM1/Decoder1/ALUDecoderOutput_reg[0]) is unused and will be removed from module Wrapper.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (CONSOLE_IN_ack_reg)
+WARNING: [Synth 8-3332] Sequential element (ARM1/Decoder1/ALUDecoderOutput_reg[3]) is unused and will be removed from module Wrapper.
+WARNING: [Synth 8-3332] Sequential element (ARM1/Decoder1/ALUDecoderOutput_reg[2]) is unused and will be removed from module Wrapper.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 869.137 ; gain = 355.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 869.137 ; gain = 355.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 869.137 ; gain = 355.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 869.137 ; gain = 355.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 876.477 ; gain = 362.734
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 876.477 ; gain = 362.734
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 876.477 ; gain = 362.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 876.477 ; gain = 362.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 876.477 ; gain = 362.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 876.477 ; gain = 362.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     2|
+|3     |LUT1   |     1|
+|4     |FDRE   |     8|
+|5     |IBUF   |     2|
+|6     |OBUF   |    57|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+---------------+------+
+|      |Instance            |Module         |Cells |
++------+--------------------+---------------+------+
+|1     |top                 |               |    71|
+|2     |  ARM1              |ARM            |    11|
+|3     |    ProgramCounter1 |ProgramCounter |    11|
++------+--------------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 876.477 ; gain = 362.734
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 43 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 876.477 ; gain = 228.156
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 876.477 ; gain = 362.734
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 895.676 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+102 Infos, 195 Warnings, 72 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 895.676 ; gain = 607.602
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 895.676 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/project_2/project_2.runs/synth_1/Wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Wrapper_utilization_synth.rpt -pb Wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 27 16:05:10 2019...

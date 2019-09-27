@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/uart.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'UART'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TOP'

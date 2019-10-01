@@ -43,22 +43,21 @@ module Decoder(
     output ALUSrc,
     output [1:0] ImmSrc,
     output [1:0] RegSrc,
-    output NoWrite,
-    output [1:0] ALUControl,
-    output [1:0] FlagW
+    output reg NoWrite,
+    output reg [1:0] ALUControl,
+    output reg [1:0] FlagW
     );
     
     wire ALUOp;
     wire Branch;
     reg [9:0] controls;
-    reg [3:0] ALUDecoderOutput;
     
     //Main Decoder determines which type of Instruction (refer to truth table)
     always@(*)
     begin
         case(Op)
-            2'b00: if(~Funct[5])    controls = 10'b0000001001;  //DP (register)
-                   else             controls = 10'b0001001001;  //DP (imm)
+            2'b00: if(~Funct[5])    controls = 10'b0000001001;  //DP (register) | ALUOp = 1 (last bit)
+                   else             controls = 10'b0001001001;  //DP (imm)      | ALUOp = 1 (last bit)
             2'b01: if(~Funct[0])    controls = 10'b0011010100;  //Memory (STR)
                    else             controls = 10'b0101011000;  //Memory (LDR)
             2'b10:                  controls = 10'b1001100010;  //Branch
@@ -69,25 +68,30 @@ module Decoder(
     assign {Branch, MemtoReg, MemW, ALUSrc, ImmSrc, RegW, RegSrc, ALUOp} = controls;
     
     
+    //ALU Decoder determines ALUControl (ADD/ SUB/ AND/ ORR), FlagW (NZCV flags) and NoWrite (CMP/ CMN)
+    always@(*) 
+    if(ALUOp == 1) begin                 //DP instructions: (ALUOP = 1)
+        case(Funct[4:1])
+            4'b0100:                ALUControl = 2'b00; //ADD
+            4'b0010:                ALUControl = 2'b01; //SUB
+            4'b0000:                ALUControl = 2'b10; //AND
+            4'b1100:                ALUControl = 2'b11; //ORR
+            4'b1010:                ALUControl = 2'b01; //CMP (same as SUBS)
+            4'b1011:                ALUControl = 2'b00; //CMN (same as ADDS)
+        endcase
     
-    //ALU Decoder determines which DP instruction (refer to truth table)
-    always@(*) if(ALUOp)
-    begin
-        case(Funct[4:0])
-            5'b01000:               ALUDecoderOutput = 4'b0000;     //ADD   FlagW = 00
-            5'b01001:               ALUDecoderOutput = 4'b0011;     //      FlagW = 11
-            5'b00100:               ALUDecoderOutput = 4'b0100;     //SUB   FlagW = 00
-            5'b00101:               ALUDecoderOutput = 4'b0111;     //      FlagW = 11
-            5'b00000:               ALUDecoderOutput = 4'b1000;     //AND   FlagW = 00
-            5'b00001:               ALUDecoderOutput = 4'b1010;     //      FlagW = 10
-            5'b11000:               ALUDecoderOutput = 4'b1100;     //ORR   FlagW = 00
-            5'b11001:               ALUDecoderOutput = 4'b1110;     //      FlagW = 10  
-            default:                ALUDecoderOutput = 4'bx;      
-        endcase  
-    end   
+    FlagW[1] <= Funct[0];   //update flags is S-bit (Funct[0]) is set
+    FlagW[0] <= Funct[0] & ( ALUControl == 2'b00 | ALUControl == 2'b01);
     
-    assign {ALUControl, FlagW}  =   ALUDecoderOutput;
+    NoWrite <= ( Funct[4:1]==4'b1010 | Funct[4:1]==4'b1011 );
+    end
     
+    else begin
+        ALUControl = {1'b0, ~Funct[3]}; //Non-dp function ( Add/Sub of imm determined by U bit)
+        FlagW = 2'b00;    
+        NoWrite = 1'b0;          
+    end
+      
         
     //PC Logic check if instruction writes to R15, OR if it's a Branch
     assign PCS = ( (Rd == 4'b1111) & RegW ) | Branch;        

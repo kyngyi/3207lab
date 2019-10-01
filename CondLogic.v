@@ -41,9 +41,9 @@ module CondLogic(
     input [1:0] FlagW,
     input [3:0] Cond,
     input [3:0] ALUFlags,
-    output reg PCSrc,
-    output reg RegWrite,
-    output reg MemWrite
+    output PCSrc,
+    output RegWrite,
+    output MemWrite
 //    output reg [3:0] flags
     );
     
@@ -51,17 +51,13 @@ module CondLogic(
     reg N = 0, Z = 0, C = 0, V = 0 ;
     reg [1:0] FlagWrite;
     
-    initial begin
-        assign PCSrc = PCS & CondEx;
-        assign RegWrite = RegW & CondEx & ~NoWrite; //CMP enhancement (~NoWrite) 
-        assign MemWrite = MemW & CondEx;
-        assign FlagWrite = FlagW & {CondEx, CondEx};
-//        assign flags = {N, Z, C, V};
-//        assign flags = ALUFlags + 4'b1111;
-    end
-    
+    assign PCSrc = PCS & CondEx;
+    assign RegWrite = RegW & CondEx & ~NoWrite; //CMP enhancement (~NoWrite) 
+    assign MemWrite = MemW & CondEx;
+            
     always@(posedge CLK)
     begin
+        FlagWrite = FlagW & {CondEx, CondEx};
         {N, Z} = FlagWrite[1] ? ALUFlags[3:2] : 2'b00;
         {C, V} = FlagWrite[0] ? ALUFlags[1:0] : 2'b00;
 //        {N, Z} = FlagWrite[1:0];

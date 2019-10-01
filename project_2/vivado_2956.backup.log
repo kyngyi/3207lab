@@ -1,0 +1,151 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Sep 28 19:36:13 2019
+# Process ID: 2956
+# Current directory: C:/Users/Asus/Desktop/3207lab-master/3207lab-master/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7800 C:\Users\Asus\Desktop\3207lab-master\3207lab-master\project_2\project_2.xpr
+# Log file: C:/Users/Asus/Desktop/3207lab-master/3207lab-master/project_2/vivado.log
+# Journal file: C:/Users/Asus/Desktop/3207lab-master/3207lab-master/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Asus/Desktop/3207lab-master/3207lab-master/project_2/project_2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 727.883 ; gain = 98.289
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Asus/Desktop/3207lab-master/3207lab-master/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_Wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Asus/Desktop/3207lab-master/3207lab-master/project_2/project_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_Wrapper_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Asus/Desktop/3207lab-master/3207lab-master/project_2/project_2.sim/sim_1/behav/xsim'
+"xelab -wto 7af3b5b5600f43b0b6379cb2b6d53cd9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_Wrapper_behav xil_defaultlib.test_Wrapper xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7af3b5b5600f43b0b6379cb2b6d53cd9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_Wrapper_behav xil_defaultlib.test_Wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Asus/Desktop/3207lab-master/3207lab-master/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_Wrapper_behav -key {Behavioral:sim_1:Functional:test_Wrapper} -tclbatch {test_Wrapper.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source test_Wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_Wrapper_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 780.496 ; gain = 49.359
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/test_Wrapper/dut/ARM1/Decoder1}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:00:46 ; elapsed = 00:00:35 . Memory (MB): peak = 780.496 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/test_Wrapper/dut/ARM1/Decoder1}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 ns
+run 10 ns
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 us
+run 100 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ms
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 780.496 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Asus/Desktop/3207lab-master/3207lab-master/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_Wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Asus/Desktop/3207lab-master/3207lab-master/project_2/project_2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_Wrapper_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Asus/Desktop/3207lab-master/3207lab-master/project_2/project_2.sim/sim_1/behav/xsim'
+"xelab -wto 7af3b5b5600f43b0b6379cb2b6d53cd9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_Wrapper_behav xil_defaultlib.test_Wrapper xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 7af3b5b5600f43b0b6379cb2b6d53cd9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_Wrapper_behav xil_defaultlib.test_Wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Asus/Desktop/3207lab-master/3207lab-master/project_2/project_2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_Wrapper_behav -key {Behavioral:sim_1:Functional:test_Wrapper} -tclbatch {test_Wrapper.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source test_Wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_Wrapper_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 780.496 ; gain = 0.000
+current_wave_config {Untitled 2}
+Untitled 2
+add_wave {{/test_Wrapper/dut/ARM1/Decoder1}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 28 20:41:17 2019...

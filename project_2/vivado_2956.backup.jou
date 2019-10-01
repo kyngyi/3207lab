@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Sep 28 19:36:13 2019
+# Process ID: 2956
+# Current directory: C:/Users/Asus/Desktop/3207lab-master/3207lab-master/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7800 C:\Users\Asus\Desktop\3207lab-master\3207lab-master\project_2\project_2.xpr
+# Log file: C:/Users/Asus/Desktop/3207lab-master/3207lab-master/project_2/vivado.log
+# Journal file: C:/Users/Asus/Desktop/3207lab-master/3207lab-master/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Asus/Desktop/3207lab-master/3207lab-master/project_2/project_2.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source test_Wrapper.tcl
+current_wave_config {Untitled 1}
+add_wave {{/test_Wrapper/dut/ARM1/Decoder1}} 
+restart
+run all
+current_wave_config {Untitled 1}
+add_wave {{/test_Wrapper/dut/ARM1/Decoder1}} 
+restart
+run 10 us
+restart
+run 10 ns
+run 10 ns
+run 10 us
+restart
+run 100 us
+run 100 us
+restart
+run 100 ns
+restart
+run 100 ms
+restart
+run 100 us
+close_sim
+launch_simulation
+source test_Wrapper.tcl
+current_wave_config {Untitled 2}
+add_wave {{/test_Wrapper/dut/ARM1/Decoder1}} 
+restart
+run 100 us
+restart
+run 100 ns
+close_sim

@@ -3,7 +3,6 @@ INFO: [VRFC 10-311] analyzing module ALU
 WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ALU.v:48]
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ARM
-WARNING: [VRFC 10-3676] redeclaration of ansi port 'MemWrite' is not allowed [C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/ARM.v:87]
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/CondLogic.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module CondLogic
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KY/Desktop/Sc 2019/CG3207/lab2/Decoder.v" into library xil_defaultlib
